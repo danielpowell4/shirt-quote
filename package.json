@@ -2,9 +2,11 @@
   "name": "shirt-quote",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://danielpowell4.github.io/shirt-quote",
   "dependencies": {
     "classnames": "^2.2.6",
     "formik": "^1.5.8",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "yup": "^0.27.0"
@@ -16,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
